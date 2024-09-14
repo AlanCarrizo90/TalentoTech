@@ -1,41 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<z>, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<z>, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <Header>
-        <h1>Formulario de Contacto</h1>
-    </Header>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <nav>
-        <ul>
-            <il><a href="index.html">Inicio</a></il>
-            <il><a href="productos.html">Productos</a></il>
-            <il><a href="quienessomos.html">Quienes somos</a></il>
-            <il><a href="contacto.html">Contacto</a></il>
-        </ul>
+      <ul>
+        <il><a href="index.html">Inicio</a></il>
+        <il><a href="productos.html">Productos</a></il>
+        <il><a href="quienessomos.html">Quienes somos</a></il>
+        <il><a href="contacto.html">Contacto</a></il>
+      </ul>
     </nav>
-    <Main>
-        <form action="https://formspree.io/f/xkgwagjv" method="POST">
-            <label>
-                Nombre y apellido:
-                <input type="text" name="name">
-            </label>
-            <br>
-            <label>
-                Email:
-                <input type="email" name="email">
-            </label>
-            <br>
-            <label>
-                Mensaje:
-                <textarea name="message"></textarea>
-            </label>
-            <!-- your other form fields go here -->
-            <button type="submit">Enviar</button>
-        </form>
-    </Main>
-</body>
+    <header>
+      <h1>Formulario de Contacto</h1>
+    </header>
+    <main>
+      <form action="https://formspree.io/f/xkgwagjv" method="POST">
+        <label>
+          Nombre y apellido:
+          <input type="text" name="name" />
+        </label>
+        <br />
+        <label>
+          Email:
+          <input type="email" name="email" />
+        </label>
+        <br />
+        <label>
+          Mensaje:
+          <textarea name="message"></textarea>
+        </label>
+        <!-- your other form fields go here -->
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+  </body>
 </html>
