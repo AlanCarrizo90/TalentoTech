@@ -2,7 +2,7 @@
 
 body{
     font-family: "Asap Condensed", Trebuchet MS, sans-serif !important;
-    background-image: url('/img/body-background.png');
+    background-image: url('../img/body-background.png');
 }
 header{
     text-align: center;
