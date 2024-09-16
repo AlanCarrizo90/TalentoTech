@@ -23,7 +23,7 @@ Este es un sitio creado siguiendo las consignas de la Ruta de Avance del proyect
 - Manipulación Básica del DOM y Eventos
 - Funciones Modulares
 
-## Clase 16 - "Entra de proyecto integrador"
+## Clase 16 - "Entrega de proyecto integrador"
 
 Desarrollarás una página o sitio web completa, que combine todos los conocimientos adquiridos a lo largo del curso. Este proyecto consistirá en la creación de un sitio web de e-commerce dinámico e interactivo, que consuma datos de una API REST para mostrar productos, y permita a los usuarios añadir productos a un carrito de compras. Tu proyecto deberá demostrar una sólida comprensión de la estructuración semántica, el diseño responsivo, la manipulación del DOM, la interacción con APIs, y la implementación de funcionalidades específicas de un e-commerce.
 
