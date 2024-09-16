@@ -11,6 +11,10 @@ header{
     background: rgb(248,207,7);
     border-radius: 5pt;
 }
+p{
+    margin:0;
+    padding:0;
+}
 a{
     text-decoration:none;
 }
@@ -33,47 +37,92 @@ nav a:hover{
     background: rgb(248,207,7);
     border-radius: 5pt;
 }
-.container{
-    border: 4px solid black;
+.container{/*Contenedor Principal*/
+
+    margin: auto;
+    padding: 10px;;
+    width: 61%;
+    min-width: 400px;
+    background-color: bisque;
+    border-radius: 5px;
+    display : flex;
+    flex-wrap:wrap;
+    
+}
+.card-margin{/*Contenedor para margen, sino se rompe el flex grow*/
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 5;
+    flex-basis: 20%;/*Tamaño inicial de la carta dentro del Container flex*/
+    display:flex;
+    flex-wrap:wrap;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.card{/*Contenedor de img,texto y precio*/
+    min-width: 0px;/*Evita overflow*/
+    min-height: 200px;/*Evita overflow*/
+    border-radius: 5px;;
+    background: rgb(230,224,193);
+    background: linear-gradient(0deg, rgba(230,224,193,1) 0%, rgba(255,255,255,1) 100%);
+    display: flex;
+    flex-wrap:wrap;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    flex-grow: 1;
+}
+.card img{
+    width:100%;
+    margin: auto;
+    filter:drop-shadow(0px 5px 5px grey);
+} 
+.card:hover {
+    box-shadow: 0px 5px 15px 0px rgb(0, 0, 0);
+}
+
+
+.form-container{
+    border: 1px solid black;
     background-color: bisque;
     width: 100%;
     display : flex;
     flex-flow: row;
-    flex-wrap:wrap;
-    justify-content: center;/*Main axis*/
-    align-items: center;/*Cross Axis*/
-    align-content: flex-end;/*A donde va el spacio sobrante*/
-    /*align-self para cards individuales*/
-    flex: 0 1 auto;
-    
+    justify-content: center;
+    align-items: center;
 }
-/* .box{
-    width: 150px;
-    height: 350px;
-    font-size: 4rem;
-    text-align: center;
-} */
-.card{
+.form-datos{
+    display:flex;
+    flex-direction: column;
+}
+
+
+/* .contacto{
     margin: 5px 5px;
     width:200px;
     height:250px;
     background: rgb(230,224,193);
     background: linear-gradient(0deg, rgba(230,224,193,1) 0%, rgba(255,255,255,1) 100%);
-    text-align:center;
+    text-align:left;
+    padding: 16px;
     border-radius: 3px;
     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.404);
     display:flex;
     flex-flow: column;
-    
+} */
+/* .contacto  input{
+    width:100%;
 }
-.card:hover {
-    box-shadow: 0px 5px 15px 0px rgb(0, 0, 0);
-}
-div.card img{
-    margin-top: auto;
-    margin-bottom: auto;
-    filter:drop-shadow(0px 5px 5px grey);
-} 
 
+.contacto textarea {
+    height: 100%;
+    width:100%;
+    resize: none;}
+.contacto button{
+    margin-top: 32px;
+    width:103%;
+} */
 
 
