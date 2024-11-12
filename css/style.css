@@ -49,7 +49,7 @@ nav a:hover{
     flex-wrap:wrap;
     
 }
-.card-margin{/*Contenedor para margen, sino se rompe el flex grow*/
+.card-margin{/*Contenedor para margen, sino el flex grow no lo compensa*/
     padding: 5px;
     box-sizing: border-box;
     border-radius: 5;
@@ -96,9 +96,23 @@ nav a:hover{
 .form-datos{
     display:flex;
     flex-direction: column;
+    
+}
+fieldset{
+    width: 769px;
 }
 
-
+.form-datos>p{
+    display:flex;
+    align-items: center;
+}
+input,textarea{
+    margin: 4px;
+    flex-grow: 1;
+}
+label{
+    margin-right: 4px;
+}
 /* .contacto{
     margin: 5px 5px;
     width:200px;
